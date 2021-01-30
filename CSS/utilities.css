@@ -1,0 +1,48 @@
+/* buuton */
+.btn{
+    color: var(--light-color);
+    background: #f27e63;
+    background: #d95f5f;
+    background: linear-gradient(179deg,#d95f5f 0%, #e08a82 80%);
+    background: -webkit-linear-gradient(179deg,#d95f5f 0%, #e08a82 80%);
+    background: -moz-linear-gradient(179deg,#d95f5f 0%, #e08a82 80%); 
+    border-radius: 30px;
+    box-shadow: 0 3px 4px #adaeaf;
+    padding: 10px 20px;
+    margin-top: 30px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    position: relative;
+}
+
+.btn:hover{
+    color: #ffffff;
+}
+
+.btnhover{
+    overflow: hidden;
+    position: relative;
+}
+
+.btnhover::after{
+    background: #fdd8d8;
+    content: "";
+    height: 155px;
+    left: -75px;
+    opacity: .2;
+    position: absolute;
+    top: -50px;
+    width: 50px;
+    -webkit-transition: all .8s cubic-bezier(0.19, 1, 0.22, 1);
+    transition: all .8s cubic-bezier(0.19, 1, 0.22, 1);
+    -webkit-transform: rotate(35deg);
+    -ms-transform: rotate(35deg);
+    transform: rotate(35deg);
+    z-index: 1;
+}
+
+.btnhover:hover::after{
+    left: 120%;
+    -webkit-transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
+    transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
+}
